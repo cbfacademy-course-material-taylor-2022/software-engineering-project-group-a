@@ -1,4 +1,4 @@
-# Black Codher Personal Project - Server side (backend)
+# MERN Stack Project - Server side (backend)
 
 All of your back end code should be in this folder.
 

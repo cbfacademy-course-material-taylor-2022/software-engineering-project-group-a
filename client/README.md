@@ -1,4 +1,4 @@
-# Black Codher Personal Personal Project - Client side (frontend)
+# MERN Stack Project - Client side (frontend)
 
 All of your front end code should be in this folder.
 
