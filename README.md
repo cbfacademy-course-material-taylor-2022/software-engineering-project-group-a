@@ -1,3 +1,5 @@
+<Nkeiru has cloned and made an initial commit>
+
 # MERN Stack Project
 
 Here's some boilerplate code with the initial setup for your project.
