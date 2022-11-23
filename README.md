@@ -1,4 +1,4 @@
-<Nkeiru has cloned and made an initial commit>
+Nkeiru has cloned and made an initial commit
 
 # MERN Stack Project
 
