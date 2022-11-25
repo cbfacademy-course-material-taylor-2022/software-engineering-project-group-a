@@ -1,11 +1,14 @@
 Nkeiru has cloned and made an initial commit :)
 
+Rahel has also made a commit.
+
 ## Our Trello Board
+
 https://trello.com/invite/b/3H3B9Uyf/ATTI62173cff07218a82a268022256e11f285A743380/software-development-diary-of-a-mvp-web-app-ios-app-android-app
 
 ## Link to our Google Drive of assets
-https://drive.google.com/drive/folders/1PL0kQimfuecF2iNs40VzIlcBTbyGBV85?usp=share_link
 
+https://drive.google.com/drive/folders/1PL0kQimfuecF2iNs40VzIlcBTbyGBV85?usp=share_link
 
 # MERN Stack Project
 
