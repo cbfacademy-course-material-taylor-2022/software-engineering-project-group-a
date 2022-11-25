@@ -67,4 +67,4 @@ If you prefer to run the back end in isolation from the front end you can do so 
 npm run server
 ```
 
-Your back end application (API) will automatically restart after every change you make and save.
+Your back end application (API) will automatically restart after every change you make and save!
