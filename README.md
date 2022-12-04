@@ -2,6 +2,8 @@ Nkeiru has cloned and made an initial commit :)
 
 Rahel has also made a commit.
 
+# This is on (or forked from) the Develop Branch, you're probably in the right place!
+
 ## Our Trello Board
 
 https://trello.com/invite/b/3H3B9Uyf/ATTI62173cff07218a82a268022256e11f285A743380/software-development-diary-of-a-mvp-web-app-ios-app-android-app
