@@ -2,12 +2,13 @@ import React from "react";
 import Dashboard from "./pages/Dashboard";
 import HomeScreen from "./pages/Homescreen";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Header></Header> */}
+        <Header></Header>
         <div>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
