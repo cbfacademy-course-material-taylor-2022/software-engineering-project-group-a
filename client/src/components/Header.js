@@ -1,4 +1,7 @@
 // This Header Component should cover the following pages:
+import{Link} from 'react-router-dom';
+
+
 
 // * Home
 // * About
@@ -12,7 +15,16 @@
 function Header() {
     return(
         <div>
-            This is the navigation bar
+            <>
+    <h1> Home </h1>
+    <h1>About</h1>
+  <h1>My Dashboard</h1>
+<Link to="/"> My Dashboard </Link>
+<Link to="/My Dashboard" className="My Account"> My Dashboard</Link>
+<Link to="/My Dashboard" className="My Expenses"> My Dashboard</Link>
+<Link to="/My Dashboard" className="My Expenses"> My Pots</Link>
+</>
+
         </div>
     )
 }
