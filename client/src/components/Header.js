@@ -1,9 +1,9 @@
 function Header() {
-    return(
-        <div>
-            This is the navigation bar
-        </div>
-    )
+  return (
+    <div>
+      <h1>This is the navigation bar.</h1>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
