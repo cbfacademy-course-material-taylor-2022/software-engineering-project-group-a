@@ -6,7 +6,7 @@ export default function LoginForm(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { setID, setUname, setUserToken } = useContext(UserContext);
+  // const { setID, setUname, setUserToken } = useContext(UserContext);
 
   function handleInputChange(event) {
     event.preventDefault();
@@ -26,9 +26,7 @@ export default function LoginForm(props) {
     } else {
       console.log(result.username + " is logged in.");
 
-      setID(result._id);
-      setUserToken(true);
-      setUname(result.username);
+      props.setUserToken(true);
     }
   }
 
