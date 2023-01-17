@@ -7,11 +7,13 @@ import {
   FaRegChartBar,
   FaBars,
 } from "react-icons/fa";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { NavLink } from "react-router-dom";
 
 function Sidebar({ children }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
     {
       path: "/Dashboard",
@@ -38,9 +40,9 @@ function Sidebar({ children }) {
     <div className="container">
       <div className="sidebar">
         <div className="top_section">
-          <h1 className="logo">Wollet</h1>
+          <h1 className="logo">WOLLET</h1>
           <div className="bars">
-            <FaBars />
+            <FaBars onClick={toggle} />
           </div>
         </div>
         {menuItem.map((item, index) => (
