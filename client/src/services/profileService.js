@@ -8,5 +8,5 @@ const getAllProfiles = async () => {
   return response.data || [];
 };
 
-// All of the endpoints in this file can be exported below
+// All of the endpoints in this file can be eorted below
 export { getAllProfiles };
