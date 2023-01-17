@@ -3,6 +3,8 @@ import Dashboard from "./pages/Dashboard";
 import HomeScreen from "./pages/Homescreen";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import About from "./components/About";
+
 
 function App() {
   return (
