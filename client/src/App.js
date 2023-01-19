@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
+import HomeScreen from "./pages/Homescreen";
 // import HomeScreen from "./pages/HomeScreen";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
       <Sidebar>
         <Routes>
+          <Route path="/" element={<HomeScreen />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/FinanceChart" element={<FinanceChart />} />
           <Route path="/RecentTransactions" element={<RecentTransactions />} />
