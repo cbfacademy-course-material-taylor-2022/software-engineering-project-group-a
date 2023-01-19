@@ -5,8 +5,29 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div>
-      <h1>This is the Footer bar.</h1>
+    <div className="footer">     
+      <ul>
+        <li>
+          <Link to="/About Us" className="grey-text text-lighten-3">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/Terms & Conditions" className="grey-text text-lighten-3">
+            Terms & Conditions
+          </Link>
+        </li>
+        <li>
+          <Link to="/Help" className="grey-text text-lighten-3">
+            Help
+          </Link>
+        </li>
+        <li>
+          <Link to="/Contact Us" className="grey-text text-lighten-3">
+            Contact Us
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
