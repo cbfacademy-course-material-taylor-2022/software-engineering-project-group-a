@@ -6,7 +6,7 @@ export default function GetStarted(props) {
       <p>You're logged in!</p>
       <p>Click here to get started!</p>
       <button>
-        <Link to={`/dashboard/${props.userID}`}>Go to your Dashboard</Link>
+        <Link to={`/dashboard`}>Go to your Dashboard</Link>
       </button>
     </div>
   );

@@ -1,8 +1,13 @@
 import React, { createContext, useState } from "react";
 import Dashboard from "./pages/Dashboard";
-import HomeScreen from "./pages/Homescreen";
+import FinanceChart from "./pages/FinanceChart";
+import RecentTransactions from "./pages/RecentTransactions";
+import About from "./pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import "./App.css";
+import HomeScreen from "./pages/Homescreen";
 
 export const UserContext = createContext(null);
 
@@ -10,10 +15,9 @@ function App() {
   const [userToken, setUserToken] = useState(false);
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        {/* <UserContext.Provider value={userDetails}> */}
+    <BrowserRouter>
+      {/* <Header></Header> */}
+      <Sidebar>
         <Routes>
           <Route
             path="/"
@@ -21,12 +25,32 @@ function App() {
               <HomeScreen userToken={userToken} setUserToken={setUserToken} />
             }
           />
-          <Route path="/dashboard/:id" element={<Dashboard />} />
+          <Route
+            path="/Dashboard"
+            element={
+              <Dashboard userToken={userToken} setUserToken={setUserToken} />
+            }
+          />
+          <Route
+            path="/FinanceChart"
+            element={
+              <FinanceChart userToken={userToken} setUserToken={setUserToken} />
+            }
+          />
+          <Route
+            path="/RecentTransactions"
+            element={
+              <RecentTransactions
+                userToken={userToken}
+                setUserToken={setUserToken}
+              />
+            }
+          />
+          <Route path="/About" element={<About />} />
         </Routes>
-        {/* </UserContext.Provider> */}
-        {/* <Footer></Footer> */}
-      </BrowserRouter>
-    </div>
+      </Sidebar>
+      {/* <Footer></Footer> */}
+    </BrowserRouter>
   );
 }
 

@@ -7,11 +7,7 @@ function HomeScreen(props) {
   return (
     <div>
       <div>
-        <p>This page will serve as our Welcome / Home screen.</p>
-        <p>
-          Clicking the 'login' button below, should take you to the user's
-          signed in, dashboard.
-        </p>
+        <p>Welcome to Wollet</p>
         <hr></hr>
 
         {props.userToken ? (
