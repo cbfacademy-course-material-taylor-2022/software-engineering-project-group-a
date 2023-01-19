@@ -4,10 +4,10 @@ import FinanceChart from "./pages/FinanceChart";
 import RecentTransactions from "./pages/RecentTransactions";
 import About from "./pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import "./App.css";
 import HomeScreen from "./pages/Homescreen";
+import Footer from "./components/Footer";
+import "./App.css";
 
 export const UserContext = createContext(null);
 
@@ -16,7 +16,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <Header></Header> */}
       <Sidebar>
         <Routes>
           <Route
@@ -49,7 +48,7 @@ function App() {
           <Route path="/About" element={<About />} />
         </Routes>
       </Sidebar>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </BrowserRouter>
   );
 }
