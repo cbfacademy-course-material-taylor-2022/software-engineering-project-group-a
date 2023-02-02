@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./pages/Homescreen";
 import Footer from "./components/Footer";
+import HelpPage from "./pages/HelpPage";
 import "./App.css";
 
 export const UserContext = createContext(null);

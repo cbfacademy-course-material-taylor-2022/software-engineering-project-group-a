@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <div>
-      About Wollet.<br></br>
+     About Wollet <br></br>
       <p>Introducing Wollet App - your personal finance partner to help you track, manage, and budget your money. With Wollet, you can create and manage personalised 'pots' to save for specific goals, like a rainy day fund or a house deposit.
       <br></br>
       <br></br>
