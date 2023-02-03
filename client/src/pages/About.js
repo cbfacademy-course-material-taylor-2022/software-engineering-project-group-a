@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function About() {
   return (
     <div>
@@ -26,7 +24,6 @@ function About() {
         <br></br>
         Download Wollet app now and start managing your finances.
       </p>
-      <Link to="/">Go back to the Home screen</Link>
     </div>
   );
 }

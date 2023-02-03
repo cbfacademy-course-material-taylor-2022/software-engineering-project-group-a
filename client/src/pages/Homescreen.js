@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import LoginForm from "../components/LoginForm";
 import GetStarted from "../components/GetStarted";
 
@@ -8,7 +8,6 @@ function HomeScreen(props) {
       <div>
         <h1 style={{ color: "#095647", fontSize: "35px" }}>Wollet</h1>
         <p>
-          {" "}
           Welcome to Wollet App - your personal finance solution. With our
           easy-to-use interface, managing your money has never been simpler.
         </p>

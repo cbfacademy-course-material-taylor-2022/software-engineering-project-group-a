@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import NotLoggedIn from "../components/NotLoggedIn";
 import "../App.css";
 
@@ -46,7 +45,7 @@ function DashboardDisplay(props) {
       <div className="potDiv">
         <div className="mainPot">
           <h2>My Main pot</h2>
-          <p className="balance">£{props.userDetails.money}</p>
+          <p className="balance">£{props.userDetails.balance}</p>
         </div>
       </div>
     </div>

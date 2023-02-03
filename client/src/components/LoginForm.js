@@ -36,7 +36,7 @@ export default function LoginForm(props) {
   return (
     <form className="login-wrapper">
       <label>
-        <p>Username:</p>
+        <p style={{ margin: "0" }}>Username:</p>
         <input
           class="loginInput"
           name="username"
@@ -46,7 +46,7 @@ export default function LoginForm(props) {
         ></input>
       </label>
       <label>
-        <p>Password:</p>
+        <p style={{ margin: "0" }}>Password:</p>
         <input
           class="loginInput"
           name="password"
@@ -58,6 +58,15 @@ export default function LoginForm(props) {
       <div style={{ margin: "auto", width: "max-content" }}>
         <button class="loginButton" type="submit" onClick={handleSubmit}>
           Login
+        </button>
+      </div>
+      <div style={{ margin: "auto", width: "max-content" }}>
+        <button
+          class="loginButton"
+          type="submit"
+          onClick={() => navigate("/Register")}
+        >
+          Register
         </button>
       </div>
     </form>

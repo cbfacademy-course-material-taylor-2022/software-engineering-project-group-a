@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./pages/Homescreen";
 import Footer from "./components/Footer";
+import Registration from "./pages/Registration";
 
 import "./App.css";
 
@@ -15,7 +16,7 @@ function App() {
   const [userDetails, setUserDetails] = useState({
     username: "",
     password: "",
-    money: "",
+    balance: "",
     id: "",
   });
 
@@ -60,6 +61,17 @@ function App() {
             }
           />
           <Route path="/About" element={<About />} />
+          <Route
+            path="/Register"
+            element={
+              <Registration
+                userToken={userToken}
+                setUserToken={setUserToken}
+                userDetails={userDetails}
+                setUserDetails={setUserDetails}
+              />
+            }
+          />
         </Routes>
       </Sidebar>
       <Footer></Footer>

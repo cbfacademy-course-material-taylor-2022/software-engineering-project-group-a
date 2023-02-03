@@ -25,5 +25,23 @@ const signInUser = async (username, password) => {
   return response;
 };
 
+const signUpUser = async (username, password, balance) => {
+  const response = await axios
+    .post(`/signup/`, {
+      username: username,
+      password: password,
+      balance: balance,
+    })
+    .then((response) => {
+      return "success";
+    })
+    .catch((error) => {
+      const err = JSON.stringify(error.response.data.message);
+      return err;
+    });
+
+  return response;
+};
+
 // All of the endpoints in this file can be exported below
-export { signInUser };
+export { signInUser, signUpUser };

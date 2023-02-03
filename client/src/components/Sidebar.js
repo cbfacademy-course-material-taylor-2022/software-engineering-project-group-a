@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import {
   FaBook,
   FaChartLine,
-  FaIcons,
   FaMoneyCheckAlt,
   FaRegChartBar,
   FaBars,
