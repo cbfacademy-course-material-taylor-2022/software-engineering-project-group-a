@@ -1,10 +1,12 @@
-import { useContext, useState } from "react";
-import { UserContext } from "../App";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signInUser } from "../services/profileService";
 
 export default function LoginForm(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   // const { setID, setUname, setUserToken } = useContext(UserContext);
 
@@ -25,8 +27,8 @@ export default function LoginForm(props) {
       alert(result);
     } else {
       console.log(result.username + " is logged in.");
-
       props.setUserToken(true);
+      navigate("/Dashboard");
     }
   }
 
@@ -52,7 +54,6 @@ export default function LoginForm(props) {
       </label>
       <div>
         <button type="submit" onClick={handleSubmit}>
-          {/* <Link to="/dashboard">Login / Go to Dashboard</Link> */}
           Login
         </button>
       </div>

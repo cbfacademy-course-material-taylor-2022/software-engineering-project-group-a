@@ -8,8 +8,8 @@ import {
   FaBars,
 } from "react-icons/fa";
 import React, { useState } from "react";
-import "./App.css";
 import { NavLink } from "react-router-dom";
+import "./ComponentStyling.css";
 
 function Sidebar(props) {
   const [isOpen, setIsOpen] = useState(false);
