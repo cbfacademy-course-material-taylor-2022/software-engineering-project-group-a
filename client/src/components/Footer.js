@@ -2,8 +2,6 @@
 import { Link } from "react-router-dom";
 import "./ComponentStyling.css";
 
-// The Footer bar should make sure that it is in line with the UI and design. (Colours and such)
-
 function Footer() {
   return (
     <div className="footer">

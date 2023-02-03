@@ -25,3 +25,27 @@ body {
   text-decoration: none;
   margin: 5px 15px;
 }
+
+.login-wrapper {
+  margin: auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 15px;
+  width: max-content;
+}
+
+.loginButton {
+  background-color: #095647;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border-color: #033121;
+  width: 10vw;
+}
+
+.loginInput {
+  width: 20vw;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}

@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInUser } from "../services/profileService";
+import "./ComponentStyling.css";
 
 export default function LoginForm(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
-
-  // const { setID, setUname, setUserToken } = useContext(UserContext);
 
   function handleInputChange(event) {
     event.preventDefault();
@@ -39,6 +38,7 @@ export default function LoginForm(props) {
       <label>
         <p>Username:</p>
         <input
+          class="loginInput"
           name="username"
           placeholder="Username"
           type="text"
@@ -48,14 +48,15 @@ export default function LoginForm(props) {
       <label>
         <p>Password:</p>
         <input
+          class="loginInput"
           name="password"
           placeholder="Password"
           type="password"
           onChange={handleInputChange}
         ></input>
       </label>
-      <div>
-        <button type="submit" onClick={handleSubmit}>
+      <div style={{ margin: "auto", width: "max-content" }}>
+        <button class="loginButton" type="submit" onClick={handleSubmit}>
           Login
         </button>
       </div>
