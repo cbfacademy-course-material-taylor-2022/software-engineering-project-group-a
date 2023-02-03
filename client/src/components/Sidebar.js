@@ -10,6 +10,7 @@ import {
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./ComponentStyling.css";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +74,8 @@ function Sidebar(props) {
 }
 
 function LogoutButton(props) {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -87,7 +90,8 @@ function LogoutButton(props) {
         margin: "15px auto",
       }}
       onClick={() => {
-        props.logout();
+        props.logout(false);
+        navigate("/");
       }}
     >
       Logout

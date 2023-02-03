@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import LoginForm from "../components/LoginForm";
 import GetStarted from "../components/GetStarted";
-// import { UserContext } from "../App";
 
 function HomeScreen(props) {
   return (
@@ -37,6 +36,8 @@ function HomeScreen(props) {
           <LoginForm
             userToken={props.userToken}
             setUserToken={props.setUserToken}
+            userDetails={props.userDetails}
+            setUserDetails={props.setUserDetails}
           />
         )}
       </div>

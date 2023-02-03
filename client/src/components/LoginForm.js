@@ -26,8 +26,10 @@ export default function LoginForm(props) {
     if (typeof result === "string") {
       alert(result);
     } else {
+      console.log(result);
       console.log(result.username + " is logged in.");
       props.setUserToken(true);
+      props.setUserDetails(result);
       navigate("/Dashboard");
     }
   }

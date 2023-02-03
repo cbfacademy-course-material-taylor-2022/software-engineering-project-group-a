@@ -17,7 +17,7 @@ body {
 
 .footer {
   display: block;
-  background-color: #095647;
+  background-color: #095647 !important;
 }
 
 .footerLink {

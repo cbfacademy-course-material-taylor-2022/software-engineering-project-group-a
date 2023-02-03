@@ -12,6 +12,12 @@ import "./App.css";
 
 function App() {
   const [userToken, setUserToken] = useState(false);
+  const [userDetails, setUserDetails] = useState({
+    username: "",
+    password: "",
+    money: "",
+    id: "",
+  });
 
   return (
     <BrowserRouter>
@@ -20,13 +26,22 @@ function App() {
           <Route
             path="/"
             element={
-              <HomeScreen userToken={userToken} setUserToken={setUserToken} />
+              <HomeScreen
+                userToken={userToken}
+                setUserToken={setUserToken}
+                userDetails={userDetails}
+                setUserDetails={setUserDetails}
+              />
             }
           />
           <Route
             path="/Dashboard"
             element={
-              <Dashboard userToken={userToken} setUserToken={setUserToken} />
+              <Dashboard
+                userToken={userToken}
+                setUserToken={setUserToken}
+                userDetails={userDetails}
+              />
             }
           />
           <Route

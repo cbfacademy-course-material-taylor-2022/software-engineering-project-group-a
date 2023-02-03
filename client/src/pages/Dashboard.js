@@ -1,14 +1,27 @@
 import { Link } from "react-router-dom";
 import NotLoggedIn from "../components/NotLoggedIn";
+import "../App.css";
 
 function Dashboard(props) {
-  return <div>{!props.userToken ? <NotLoggedIn /> : <DashboardDisplay />}</div>;
+  return (
+    <div>
+      {!props.userToken ? (
+        <NotLoggedIn />
+      ) : (
+        <DashboardDisplay
+          userDetails={props.userDetails}
+          setUserDetails={props.setUserDetails}
+        />
+      )}
+    </div>
+  );
 }
 
-function DashboardDisplay() {
+function DashboardDisplay(props) {
   return (
     <div>
       <h1 style={{ color: "#095647", fontSize: "35px" }}>Dashboard</h1>
+      <h2>Hi, {props.userDetails.username}!</h2>
       <div>
         Welcome to the Wollet Dashboard!<br></br>
         <p>
@@ -29,6 +42,12 @@ function DashboardDisplay() {
           Don't forget to check out our personalised profile section, where you
           can set your saving goals and budgeting plans.
         </p>
+      </div>
+      <div className="potDiv">
+        <div className="mainPot">
+          <h2>My Main pot</h2>
+          <p className="balance">£{props.userDetails.money}</p>
+        </div>
       </div>
     </div>
   );
