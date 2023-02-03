@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 import Dashboard from "./pages/Dashboard";
 import FinanceChart from "./pages/FinanceChart";
 import RecentTransactions from "./pages/RecentTransactions";
@@ -10,14 +10,12 @@ import Footer from "./components/Footer";
 
 import "./App.css";
 
-export const UserContext = createContext(null);
-
 function App() {
   const [userToken, setUserToken] = useState(false);
 
   return (
     <BrowserRouter>
-      <Sidebar>
+      <Sidebar userToken={userToken} setUserToken={setUserToken}>
         <Routes>
           <Route
             path="/"

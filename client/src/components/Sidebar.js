@@ -11,9 +11,10 @@ import React, { useState } from "react";
 import "./App.css";
 import { NavLink } from "react-router-dom";
 
-function Sidebar({ children }) {
+function Sidebar(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+
   const menuItem = [
     {
       path: "/Dashboard",
@@ -60,8 +61,36 @@ function Sidebar({ children }) {
             <div className="link_text">{item.name}</div>
           </NavLink>
         ))}
+        {props.userToken ? (
+          <LogoutButton logout={props.setUserToken} />
+        ) : (
+          <p></p>
+        )}
       </div>
-      <main>{children}</main>
+      <main>{props.children}</main>
+    </div>
+  );
+}
+
+function LogoutButton(props) {
+  return (
+    <div
+      style={{
+        justifyContent: "center",
+        padding: "10px 5px",
+        borderColor: "fff",
+        borderStyle: "solid",
+        borderWidth: 1,
+        textAlign: "center",
+        borderRadius: 15,
+        width: "50%",
+        margin: "15px auto",
+      }}
+      onClick={() => {
+        props.logout();
+      }}
+    >
+      Logout
     </div>
   );
 }
