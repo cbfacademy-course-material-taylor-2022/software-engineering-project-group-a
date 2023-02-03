@@ -42,6 +42,7 @@ body {
   border-color: #033121;
   width: 10vw;
   margin: 5px 0;
+  text-decoration: none;
 }
 
 .loginInput {
