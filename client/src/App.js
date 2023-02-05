@@ -8,8 +8,16 @@ import Sidebar from "./components/Sidebar";
 import HomeScreen from "./pages/Homescreen";
 import Footer from "./components/Footer";
 import Registration from "./pages/Registration";
+import { Outlet } from "react-router-dom";
 
 import "./App.css";
+
+const SidebarLayout = () => (
+  <>
+    <Sidebar />
+    <Outlet />
+  </>
+);
 
 function App() {
   const [userToken, setUserToken] = useState(false);
@@ -62,7 +70,7 @@ function App() {
           />
           <Route path="/About" element={<About />} />
           <Route
-            path="/Register"
+            path="/About"
             element={
               <Registration
                 userToken={userToken}

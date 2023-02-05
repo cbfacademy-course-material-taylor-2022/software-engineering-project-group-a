@@ -5,6 +5,8 @@ import {
   FaMoneyCheckAlt,
   FaRegChartBar,
   FaBars,
+  FaFileAlt,
+  FaRegUser,
 } from "react-icons/fa";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -34,7 +36,12 @@ function Sidebar(props) {
     {
       path: "/About",
       name: "About Wollet",
-      icon: <FaChartLine />,
+      icon: <FaFileAlt />,
+    },
+    {
+      path: "/Login",
+      name: "Login",
+      icon: <FaRegUser />,
     },
   ];
   return (
@@ -82,7 +89,7 @@ function LogoutButton(props) {
         padding: "10px 5px",
         borderColor: "fff",
         borderStyle: "solid",
-        borderWidth: 1,
+        borderWidth: 2,
         textAlign: "center",
         borderRadius: 15,
         width: "50%",

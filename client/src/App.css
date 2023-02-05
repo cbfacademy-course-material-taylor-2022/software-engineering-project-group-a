@@ -76,13 +76,15 @@ main {
 }
 
 .potDiv {
-  background-color: #2c745b;
+  background: rgba(52, 52, 52, 0.1);
   height: 20vh;
   margin: 20px 0;
-  border-style: solid;
-  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
-  color: white;
+  color: rgb(82, 82, 82);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
