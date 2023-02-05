@@ -84,7 +84,7 @@ function DashboardDisplay(props) {
             />
           }
           title={"Shopping"}
-          value={12345}
+          value={4345}
         />
         <DashboardCard
           icon={
@@ -99,7 +99,7 @@ function DashboardDisplay(props) {
             />
           }
           title={"Emergency Funds"}
-          value={12345}
+          value={2174}
         />
         <DashboardCard
           icon={
@@ -114,7 +114,7 @@ function DashboardDisplay(props) {
             />
           }
           title={"Travel Plan"}
-          value={12345}
+          value={1345}
         />
         <DashboardCard
           icon={
@@ -129,7 +129,7 @@ function DashboardDisplay(props) {
             />
           }
           title={"Education"}
-          value={12345}
+          value={5545}
         />
         <DashboardCard
           icon={
@@ -144,7 +144,7 @@ function DashboardDisplay(props) {
             />
           }
           title={"Foods and Groceries"}
-          value={12345}
+          value={3375}
         />
         <DashboardCard
           icon={
