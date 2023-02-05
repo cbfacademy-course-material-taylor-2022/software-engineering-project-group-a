@@ -1,4 +1,17 @@
 import NotLoggedIn from "../components/NotLoggedIn";
+import { useState, useEffect } from "react";
+import { getOrders } from "../API";
+import {
+  FaBook,
+  FaBriefcaseMedical,
+  FaCar,
+  FaCoins,
+  FaCommentDollar,
+  FaPepperHot,
+  FaPlaneDeparture,
+  FaShoppingBasket,
+} from "react-icons/fa";
+import { Card, Space, Statistic, Table, Typography } from "antd";
 import "../App.css";
 
 function Dashboard(props) {
@@ -19,8 +32,15 @@ function Dashboard(props) {
 function DashboardDisplay(props) {
   return (
     <div>
-      <h1 style={{ color: "#095647", fontSize: "35px" }}>Dashboard</h1>
-      <h2>Hi, {props.userDetails.username}!</h2>
+      <h1
+        style={{
+          color: "#095647",
+          fontSize: "35px",
+          marginBottom: "10px",
+        }}
+      >
+        Dashboard
+      </h1>
       <div>
         Welcome to the Wollet Dashboard!<br></br>
         <p>
@@ -44,11 +64,168 @@ function DashboardDisplay(props) {
       </div>
       <div className="potDiv">
         <div className="mainPot">
-          <h2>My Main pot</h2>
+          <h2>
+            <FaCommentDollar /> Hi, {props.userDetails.username}!
+          </h2>
           <p className="balance">£{props.userDetails.balance}</p>
         </div>
       </div>
+      <Space direction="horizontal">
+        <DashboardCard
+          icon={
+            <FaShoppingBasket
+              style={{
+                color: "black",
+                backgroundColor: "rgba(0,255,0,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Shopping"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaBriefcaseMedical
+              style={{
+                color: "black",
+                backgroundColor: "rgba(0,55,0,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Emergency Funds"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaPlaneDeparture
+              style={{
+                color: "black",
+                backgroundColor: "rgba(252,186,3,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Travel Plan"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaBook
+              style={{
+                color: "black",
+                backgroundColor: "rgba(183,112,250,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Education"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaPepperHot
+              style={{
+                color: "black",
+                backgroundColor: "rgba(151,191,222,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Foods and Groceries"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaCar
+              style={{
+                color: "black",
+                backgroundColor: "rgba(222,192,151,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Car Finance"}
+          value={12345}
+        />
+        <DashboardCard
+          icon={
+            <FaCoins
+              style={{
+                color: "black",
+                backgroundColor: "rgba(222,151,157,0.25",
+                borderRadius: 12,
+                fontSize: 24,
+                padding: 8,
+              }}
+            />
+          }
+          title={"Donation"}
+          value={12345}
+        />
+      </Space>
+      <Space>
+        <RecentOrders />
+      </Space>
     </div>
+  );
+}
+
+function DashboardCard({ title, value, icon }) {
+  return (
+    <Card>
+      <Space direction="horizontal">
+        {icon}
+        <Statistic title={title} value={value} />
+      </Space>
+    </Card>
+  );
+}
+
+function RecentOrders() {
+  const [dataSource, setDataSource] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    getOrders().then((res) => {
+      setDataSource(res.products);
+      setLoading(false);
+    });
+  }, []);
+
+  return (
+    <Table
+      columns={[
+        {
+          title: "Title",
+          dataIndex: "title",
+        },
+        {
+          title: "Quantity",
+          dataIndex: "quantity",
+        },
+        {
+          title: "Price",
+          dataIndex: "discountedPrice",
+        },
+      ]}
+      loading={loading}
+      dataSource={dataSource}
+    ></Table>
   );
 }
 
