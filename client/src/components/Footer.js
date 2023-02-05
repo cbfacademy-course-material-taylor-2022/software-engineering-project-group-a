@@ -25,7 +25,9 @@ function Footer() {
         <li>
           <Link to="/Contact Us" className="grey-text text-lighten-3">
             Contact Us
+            © 2023 Copyright
           </Link>
+          
         </li>
       </ul>
     </div>
