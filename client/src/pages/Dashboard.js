@@ -208,24 +208,36 @@ function RecentOrders() {
   }, []);
 
   return (
-    <Table
-      columns={[
-        {
-          title: "Title",
-          dataIndex: "title",
-        },
-        {
-          title: "Quantity",
-          dataIndex: "quantity",
-        },
-        {
-          title: "Price",
-          dataIndex: "discountedPrice",
-        },
-      ]}
-      loading={loading}
-      dataSource={dataSource}
-    ></Table>
+    <>
+      <Typography.Text
+        style={{
+          color: "#095647",
+          fontSize: "25px",
+          fontWeight: "Bold",
+          margin: "10px",
+        }}
+      >
+        Recent Transactions
+      </Typography.Text>
+      <Table
+        columns={[
+          {
+            title: "Title",
+            dataIndex: "title",
+          },
+          {
+            title: "Date",
+            dataIndex: "quantity",
+          },
+          {
+            title: "Price",
+            dataIndex: "discountedPrice",
+          },
+        ]}
+        loading={loading}
+        dataSource={dataSource}
+      ></Table>
+    </>
   );
 }
 
