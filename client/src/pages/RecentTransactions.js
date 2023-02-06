@@ -1,4 +1,5 @@
 import NotLoggedIn from "../components/NotLoggedIn";
+import WidgetLg from "../components/WidgetLg";
 
 function RecentTransactions(props) {
   return <div>{!props.userToken ? <NotLoggedIn /> : <RTDisplay />}</div>;
@@ -34,6 +35,10 @@ function RTDisplay() {
         Stay on top of your spending with Wollet's Recent Transactions feature.
         Start exploring now! These are your recent transactions.
       </p>
+      <div className="Latest Transactions">
+        {" "}
+        <WidgetLg />{" "}
+      </div>
     </div>
   );
 }

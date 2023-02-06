@@ -1,4 +1,5 @@
 import NotLoggedIn from "../components/NotLoggedIn";
+import Chart from "../components/Chart";
 
 function FinanceChart(props) {
   return <div>{!props.userToken ? <NotLoggedIn /> : <FinanceDisplay />}</div>;
@@ -28,6 +29,10 @@ function FinanceDisplay() {
         <br></br>
         <br></br>
       </p>
+      <div className="recent transactions">
+        {" "}
+        <Chart />{" "}
+      </div>
     </div>
   );
 }
