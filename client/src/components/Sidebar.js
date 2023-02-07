@@ -123,7 +123,7 @@ function LoginButton(props) {
       }}
       onClick={() => {
         // props.login(true);
-        navigate("/");
+        navigate("/Login");
       }}
     >
       Login

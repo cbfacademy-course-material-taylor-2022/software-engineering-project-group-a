@@ -15,7 +15,8 @@ function HomeScreen(props) {
         >
           Wollet
         </h1>
-        {props.userToken ? (
+        <h2>This is the homepage</h2>
+        {/* {props.userToken ? (
           <GetStarted />
         ) : (
           <LoginForm
@@ -24,7 +25,7 @@ function HomeScreen(props) {
             userDetails={props.userDetails}
             setUserDetails={props.setUserDetails}
           />
-        )}
+        )} */}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import Registration from "./pages/Registration";
 import { Outlet } from "react-router-dom";
 
 import "./App.css";
+import LoginForm from "./components/LoginForm";
 
 const SidebarLayout = () => (
   <>
@@ -70,9 +71,20 @@ function App() {
           />
           <Route path="/About" element={<About />} />
           <Route
-            path="/About"
+            path="/Register"
             element={
               <Registration
+                userToken={userToken}
+                setUserToken={setUserToken}
+                userDetails={userDetails}
+                setUserDetails={setUserDetails}
+              />
+            }
+          />
+          <Route
+            path="/Login"
+            element={
+              <LoginForm
                 userToken={userToken}
                 setUserToken={setUserToken}
                 userDetails={userDetails}
