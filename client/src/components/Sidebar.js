@@ -38,11 +38,11 @@ function Sidebar(props) {
       name: "About Wollet",
       icon: <FaFileAlt />,
     },
-    {
-      path: "/Login",
-      name: "Login",
-      icon: <FaRegUser />,
-    },
+    // {
+    //   path: "/Login",
+    //   name: "Login",
+    //   icon: <FaRegUser />,
+    // },
   ];
   return (
     <div className="container">
@@ -71,7 +71,7 @@ function Sidebar(props) {
         {props.userToken ? (
           <LogoutButton logout={props.setUserToken} />
         ) : (
-          <p></p>
+          <LoginButton login={props.setUserToken} />
         )}
       </div>
       <main>{props.children}</main>
@@ -101,6 +101,32 @@ function LogoutButton(props) {
       }}
     >
       Logout
+    </div>
+  );
+}
+
+function LoginButton(props) {
+  const navigate = useNavigate();
+
+  return (
+    <div
+      style={{
+        justifyContent: "center",
+        padding: "10px 5px",
+        borderColor: "fff",
+        borderStyle: "solid",
+        borderWidth: 2,
+        textAlign: "center",
+        borderRadius: 15,
+        width: "50%",
+        margin: "15px auto",
+      }}
+      onClick={() => {
+        // props.login(true);
+        navigate("/");
+      }}
+    >
+      Login
     </div>
   );
 }
