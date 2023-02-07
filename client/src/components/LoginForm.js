@@ -34,41 +34,45 @@ export default function LoginForm(props) {
   }
 
   return (
-    <form className="login-wrapper">
-      <label>
-        <p style={{ margin: "0" }}>Username:</p>
-        <input
-          class="loginInput"
-          name="username"
-          placeholder="Username"
-          type="text"
-          onChange={handleInputChange}
-        ></input>
-      </label>
-      <label>
-        <p style={{ margin: "0" }}>Password:</p>
-        <input
-          class="loginInput"
-          name="password"
-          placeholder="Password"
-          type="password"
-          onChange={handleInputChange}
-        ></input>
-      </label>
-      <div style={{ margin: "auto", width: "max-content" }}>
-        <button class="loginButton" type="submit" onClick={handleSubmit}>
-          Login
-        </button>
-      </div>
-      <div style={{ margin: "auto", width: "max-content" }}>
-        <button
-          class="loginButton"
-          type="submit"
-          onClick={() => navigate("/Register")}
-        >
-          Register
-        </button>
-      </div>
-    </form>
+    <div>
+      <h1 style={{ color: "#095647" }}>Login</h1>
+
+      <form className="login-wrapper">
+        <label>
+          <p style={{ margin: "0" }}>Username:</p>
+          <input
+            class="loginInput"
+            name="username"
+            placeholder="Username"
+            type="text"
+            onChange={handleInputChange}
+          ></input>
+        </label>
+        <label>
+          <p style={{ margin: "0" }}>Password:</p>
+          <input
+            class="loginInput"
+            name="password"
+            placeholder="Password"
+            type="password"
+            onChange={handleInputChange}
+          ></input>
+        </label>
+        <div style={{ margin: "auto", width: "max-content" }}>
+          <button class="loginButton" type="submit" onClick={handleSubmit}>
+            Login
+          </button>
+        </div>
+        <div style={{ margin: "auto", width: "max-content" }}>
+          <button
+            class="loginButton"
+            type="submit"
+            onClick={() => navigate("/Register")}
+          >
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }

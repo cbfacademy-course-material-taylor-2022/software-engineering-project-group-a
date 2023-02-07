@@ -47,8 +47,8 @@ export default function Registration(props) {
   }
 
   return (
-    <div>
-      <h1 style={{ color: "#095647", fontSize: "35px" }}>Register</h1>
+    <div style={{ width: "100%" }}>
+      <h1 style={{ color: "#095647" }}>Register</h1>
       <p>
         Welcome to Wollet App - your personal finance solution. With our
         easy-to-use interface, managing your money has never been simpler.
