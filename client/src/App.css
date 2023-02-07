@@ -69,12 +69,6 @@ main {
   font-size: 20px;
 }
 
-.footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
-}
-
 .potDiv {
   background: rgba(52, 52, 52, 0.1);
   height: 20vh;

@@ -17,11 +17,14 @@ body {
 
 .footer {
   display: block;
-  background-color: #fff !important;
+  background-color: #095647;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .footerLink {
-  color: #095647;
+  color: white;
   text-decoration: none;
   margin: 5px 15px;
 }
