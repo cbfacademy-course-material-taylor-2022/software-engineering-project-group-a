@@ -1,6 +1,7 @@
 import NotLoggedIn from "../components/NotLoggedIn";
 import { useState, useEffect } from "react";
 import { getOrders } from "../API";
+import AddWalletButton from "../components/AddWalletButton";
 import {
   FaBook,
   FaBriefcaseMedical,
@@ -240,10 +241,11 @@ function RecentOrders() {
         loading={loading}
         dataSource={dataSource}
       ></Table>
+          <AddWalletButton></AddWalletButton>
     </>
   );
 }
-
+ 
 function DashboardChart() {
   const options = {
     responsive: true,

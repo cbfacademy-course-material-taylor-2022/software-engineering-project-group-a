@@ -9,7 +9,7 @@ import HomeScreen from "./pages/Homescreen";
 import Footer from "./components/Footer";
 import Registration from "./pages/Registration";
 import { Outlet } from "react-router-dom";
-
+import NewWallet from "./pages/NewWallet";
 import "./App.css";
 
 const SidebarLayout = () => (
@@ -73,6 +73,17 @@ function App() {
             path="/About"
             element={
               <Registration
+                userToken={userToken}
+                setUserToken={setUserToken}
+                userDetails={userDetails}
+                setUserDetails={setUserDetails}
+              />
+            }
+          />
+          <Route
+            path="/newwallet"
+            element={
+              <NewWallet
                 userToken={userToken}
                 setUserToken={setUserToken}
                 userDetails={userDetails}
