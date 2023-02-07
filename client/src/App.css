@@ -13,7 +13,7 @@ p {
 }
 
 main {
-  /* width: 100px; */
+  width: 100%;
   padding: 20px;
 }
 
@@ -91,4 +91,25 @@ main {
 
 .balance {
   font-size: 80px;
+}
+
+.register-wrapper {
+  /* display: table-cell; */
+  text-align: center;
+  /* vertical-align: middle; */
+  margin: auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: auto;
+}
+
+.registerButton {
+  background-color: #095647;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border-color: #033121;
+  width: 10vw;
+  margin: 5px 0;
+  text-decoration: none;
 }

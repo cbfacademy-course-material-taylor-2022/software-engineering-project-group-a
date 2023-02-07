@@ -47,14 +47,14 @@ export default function Registration(props) {
   }
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ margin: "auto" }}>
       <h1 style={{ color: "#095647" }}>Register</h1>
       <p>
         Welcome to Wollet App - your personal finance solution. With our
         easy-to-use interface, managing your money has never been simpler.
       </p>
 
-      <form className="login-wrapper">
+      <form className="register-wrapper">
         <label>
           <p style={{ margin: "0" }}>Username:</p>
           <input
@@ -86,8 +86,8 @@ export default function Registration(props) {
             onChange={handleInputChange}
           ></input>
         </label>
-        <div style={{ margin: "auto", width: "max-content" }}>
-          <button class="loginButton" type="submit" onClick={handleSubmit}>
+        <div style={{ margin: "auto" }}>
+          <button class="registerButton" type="submit" onClick={handleSubmit}>
             Sign Up
           </button>
         </div>
