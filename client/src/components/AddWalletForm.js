@@ -4,7 +4,7 @@ export default function AddWalletForm() {
       const navigate = useNavigate () 
   return (
     <div>
-        Wallet form added Here
+        Please Creat your New Wallet Here
  
     </div>
   );

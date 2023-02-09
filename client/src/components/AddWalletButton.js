@@ -6,7 +6,7 @@ export default function AddWalletButton() {
     <div>
    
       <button class=" " onClick={() => navigate("/newwallet")}>
-           Add your New Wallet
+              Add your New Wallet
       </button>
     </div>
   );
