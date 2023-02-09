@@ -30,14 +30,12 @@ body {
 }
 
 .login-wrapper {
-  display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: auto;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 200px 380px;
-  width: max-content;
+  width: auto;
 }
 
 .loginButton {
