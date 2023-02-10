@@ -241,6 +241,7 @@ function RecentOrders() {
         loading={loading}
         dataSource={dataSource}
       ></Table>
+        
           <AddWalletButton></AddWalletButton>
     </>
   );
@@ -289,6 +290,7 @@ function DashboardChart() {
     <Card style={{ width: 500, height: 350 }}>
       <Bar options={options} data={data} />
     </Card>
+    
   );
 }
 
