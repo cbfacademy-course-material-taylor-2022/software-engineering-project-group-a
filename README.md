@@ -1,8 +1,12 @@
-Nkeiru has cloned and made an initial commit :)
+# Wollet
 
-Rahel has also made a commit.
+Description: Introducing Wollet App - your personal finance partner to help you track, manage, and budget your money. With Wollet, you can create and manage personalised ‘pots’ to save for specific goals, like a rainy day fund or a house deposit.
 
-# This is on (or forked from) the Develop Branch, you're probably in the right place!
+- [Wollet](#wollet)
+  - [Our Trello Board](#our-trello-board)
+  - [Google Drive](#link-to-our-google-drive-of-assets)
+  - [Contributions](#contributions)
+  - [Screenshots](#screenshots)
 
 ## Our Trello Board
 
@@ -12,20 +16,79 @@ https://trello.com/invite/b/3H3B9Uyf/ATTI62173cff07218a82a268022256e11f285A74338
 
 https://drive.google.com/drive/folders/1PL0kQimfuecF2iNs40VzIlcBTbyGBV85?usp=share_link
 
-# MERN Stack Project
+## Contributions
+
+### Nkeiruka:
+
+- Login and logout features
+- Created MongoDB database
+- Established initial page Routing
+- Established DB Schema
+- Created services between the client and server for fetching DB Data.
+- Created the logic for registering to the platform
+- Route validation (Making sure you can only access pages if logged in)
+- Ability to retrieve information from the DB such as currency, name and Balance.
+- General UI design and touch ups.
+- Managed Git Repository structure and merged branches into main.
+- Initial page and component creation.
+- Observed code sanitisation and logic
+
+### Rahel:
+
+- Wrote up Use Cases
+- Created UI/UX Wireframes using Figma
+- Contributed to Branding design
+- Implemented full Sidebar component - including routing of pages.
+- Also implemented complete design for Dashboard, Finance Chart, Recent Transactions and About Wollet on develop branch.
+- Created Dummy Data for Static Chart
+- Contributed to group presentations
+
+### Katrina:
+
+- Coordinated the group kick-off meeting - Leadership
+- Created Branding for the App
+- Contributed to the homepage
+- Set up group tracking, tools and project management
+- Set up and updated Group Team Trello and Comms
+- Set up Group comms
+- Debugging and identifying code conflicts
+- Writing the Micro UX Copy for all of the pages of the app
+- Testing the app
+- Created group presentation and worked with Helen to develop content
+- Setting up App branding and app created the logo
+- Contributing to Group collabs of coding elements
+- Set up retrospective reporting presentation
+- Set up Team and liaised with the updates on the Trello board
+
+### Helen:
+
+- Implemented Footer Structure
+- Worked on the user requirement
+- Contributed to two team presentations
+
+## Screenshots
+
+Please see screenshot files within the [Screenshots](/screenshots/) folder.
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.04.20.png)
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.13.42.png)
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.13.51.png)
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.13.54.png)
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.13.58.png)
+
+![alt text](/screenshots/Screen%20Shot%202023-03-21%20at%2022.14.08.png)
+
+<!-- # MERN Stack Project
 
 Here's some boilerplate code with the initial setup for your project.
 
 The expectation with this code is that you're able to clone the repository and get started building your own fullstack ([MERN](https://www.mongodb.com/mern-stack)) application.
 
-- [Project Structure](#project-structure)
-  - [Client](#client)
-  - [Server](#server)
-- [Getting Started](#getting-started)
-  - [Populating The Database](#populating-the-database)
-  - [Starting The Development Server](#starting-the-development-server)
-  - [Example Application](#example-application)
-- [What's Next?!](#whats-next)
+
 
 ## Project Structure
 
@@ -48,7 +111,7 @@ The initial structure of the repository is:
   - README.md
 ```
 
-### Client
+<!-- ### Client
 
 The client folder is where you will store your front end code. Currently this contains a new project created with `create-react-app` and an example of how to call an API that's in active development.
 
@@ -115,4 +178,4 @@ If all's well with the above steps, you should see a list of familiar names. If 
 
 ## What's Next?!
 
-Now it's time to start building your project.
+Now it's time to start building your project. -->
